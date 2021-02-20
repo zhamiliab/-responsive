@@ -1,0 +1,97 @@
+body {
+	background-color: rgb(223, 223, 238);
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: large;
+}
+nav,
+main,
+aside {
+	display: inline-block;
+	padding: 10px;
+	vertical-align: top;
+}
+section {
+	box-sizing: border-box;
+	vertical-align: top;
+}
+header {
+	padding: 20px 40px;
+}
+nav {
+	width: 16%;
+}
+li {	
+	border-bottom: solid 1px rgb(167, 185, 202);
+	list-style-type: none;
+	margin: 8px;
+	padding: 8px 15px 8px 0;
+	text-align: left;
+}
+li:hover {
+	color: lightskyblue;
+	background-color: white;
+}
+section {
+	background-color: white;
+	padding: 10px 0;
+}
+main {
+	padding: 5px;
+	width: 50%;
+	vertical-align: top;
+	display: inline-block;
+}
+img {
+	width: 100%;
+}
+
+aside {
+	background-color: rgb(179, 225, 241);
+	padding: 15px;
+	width: 20%;
+}
+
+footer {
+	background-color: rgb(223, 223, 238);
+	text-align: center;
+	padding: 25px;
+}
+
+
+/*tablet. On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+	nav {
+		margin: 0%;
+		padding: 0;
+		width: 38%;
+		font-size: medium;
+		text-align: left;
+	}
+	section {
+		margin: 0%;
+	}
+	.main {
+		margin: 0%;
+		padding: 0;
+		width: 58%;
+		font-size: medium;
+	}
+	aside,
+	footer {
+		font-size: medium;
+		width: 95%;
+	}
+}
+/*cell. On screens that are 760px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 760px) {
+	nav, section,
+	main.main {
+		width: 100%;		
+	}	
+	h2, p{
+		padding-left:5% ;
+	}
+
+}
